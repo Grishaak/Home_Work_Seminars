@@ -22,10 +22,10 @@ int yCoordB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите точки по Z:");
 int zCoordB = Convert.ToInt32(Console.ReadLine());
 
-double distance = FindAB(xCoordA,yCoordA,zCoordA,xCoordB,yCoordB,zCoordB);
-Console.WriteLine($"Расстояние между точками равно:{Math.Round(distance)}");
+double distance = FindAB(xCoordA, yCoordA, zCoordA, xCoordB, yCoordB, zCoordB);
+Console.WriteLine($"Расстояние между точками равно:{Math.Round(distance, 1)}");
 
-double FindAB(int xA, int yA, int xB, int yB, int zA, int zB)
+double FindAB(int xA, int yA, int zA, int xB, int yB, int zB)
 {
-    return Math.Sqrt(Math.Pow(xA-xB, 2)+Math.Pow(yA-yB, 2)+Math.Pow(zA-zB, 2));
-} 
+    return Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2) + Math.Pow(zB - zA, 2));
+}

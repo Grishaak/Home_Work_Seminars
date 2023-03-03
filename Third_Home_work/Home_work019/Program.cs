@@ -6,14 +6,14 @@
 // 23432 -> да
 
 Console.WriteLine("Введите число: ");
-string fiveDigitNumber = Console.ReadLine();
+int fiveDigitNumber = Convert.ToInt32(Console.ReadLine());
 
-void Palindrom(string number)
+void Palindrom(int number)
 {
-    if (number.Length == 5)
+    if (10000 < number && number < 100000)
     {
-        int i = number[0]; int j = number[number.Length - 1];
-        int g = number[1]; int l = number[number.Length - 2];
+        int i = number / 10000; int j = number % 10;
+        int g = (number / 1000) % 10; int l = (number % 100) / 10;
         if (i == j && g == l) Console.WriteLine($"Число {number} является палиндром");
         else Console.WriteLine($"Число {number} не является палиндром");
     }

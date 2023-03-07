@@ -10,7 +10,8 @@ int fiveDigitNumber = Convert.ToInt32(Console.ReadLine());
 
 void Palindrom(int number)
 {
-    if (10000 < number && number < 100000)
+    if (number < 0) number = -number;
+    if ((double) number / 10 > 1000)
     {
         int i = number / 10000; int j = number % 10;
         int g = (number / 1000) % 10; int l = (number % 100) / 10;

@@ -10,7 +10,7 @@ double[] CreateArrayRndInt(int size)
     Random rnd = new Random();
     for (int i = 0; i < size; i++)
     {
-        arr[i] = Math.Round(rnd.NextDouble() * 10, 2);
+        arr[i] = Math.Round(rnd.NextDouble() * rnd.Next(10, 20), 2);
     }
     return arr;
 }

@@ -46,4 +46,4 @@ Console.WriteLine();
 PrintArray(array);
 Console.WriteLine();
 int countNumbers = CountNumbersAverageZero(array);
-Console.WriteLine($"В массиве c размером {mNumber} чисел больше нуля --> {countNumbers}");
+Console.WriteLine($"В массиве c размером {mNumber}, чисел больше нуля --> {countNumbers}");

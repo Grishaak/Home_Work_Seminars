@@ -5,14 +5,14 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 Console.WriteLine("Введите числа: ");
-Console.WriteLine("Введите коэфициент k1: ");
-double numberK1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите коэфициент k2: ");
-double numberK2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число b1: ");
-double numberB1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число b2: ");
-double numberB2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите коэфициент k1: ");
+double numberK1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите коэфициент k2: ");
+double numberK2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите число b1: ");
+double numberB1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите число b2: ");
+double numberB2 = Convert.ToDouble(Console.ReadLine());
 
 
 double XCoordinateFind(double k1, double k2, double b1, double b2)
@@ -39,4 +39,4 @@ double YCoordinateFind(double k1, double b1, double x)
 
 double xCoordinate = XCoordinateFind(numberK1, numberK2, numberB1, numberB2);
 double yCoordinate = YCoordinateFind(numberK1, numberB1, xCoordinate);
-Console.WriteLine($"({xCoordinate} ; {yCoordinate})");
+Console.WriteLine($" Точкой пересечения двух прямых являются координаты ({Math.Round(xCoordinate, 2)} ; {Math.Round(yCoordinate, 2)})");

@@ -41,10 +41,11 @@ bool FindmatrixElement(int[,] arr, int row, int column)
     return (row - 1 < arr.GetLength(0) && column - 1 < arr.GetLength(1));
 }
 
-int[,] matrix = CreateMatrixRndInt(4, 4, -10, 10);
+int[,] matrix = CreateMatrixRndInt(10, 10, -10, 10);
 
 PrintArray(matrix);
-
+// Я решил поменять индексирование для лушего понимания где находится 
+// тот или иной элемент матрицы. 0 и 0 таких элементов нет. Начиная с 1 и 1.
 Console.WriteLine("Введите строку матрицы элемента котрого хотите найти:");
 int rowNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите столбец матрицы элемента котрого хотите найти:");

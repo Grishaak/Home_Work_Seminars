@@ -32,6 +32,6 @@ void PrintArray(double[,] arr)
     }
 }
 
-double[,] matrix = CreateMatrixRndInt(4, 4, -10, 10);
+double[,] matrix = CreateMatrixRndInt(4, 4, -20, 20);
 
 PrintArray(matrix);

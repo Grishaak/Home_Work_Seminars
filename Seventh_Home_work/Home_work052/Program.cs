@@ -60,7 +60,7 @@ double[] AverageAriphmetic(int[,] arr)
     return averageArray;
 }
 
-int[,] matrix = CreateMatrixRndInt(2, 5, 2, 5);
+int[,] matrix = CreateMatrixRndInt(5, 5, 1, 10);
 double[] averageMatrix = AverageAriphmetic(matrix);
 
 PrintMatrix(matrix);
